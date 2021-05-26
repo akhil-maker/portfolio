@@ -3,6 +3,7 @@
 <head>
 	<title>First webpage</title>
 	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<!-- <h1>Hello World, check out my website!</h1>
@@ -28,55 +29,59 @@
 		<li>Ordered item 1</li>
 		<li>Ordered item 2</li>
 	</ol> -->
-	<div>
+	<div class="container">
+		<div class="intro">
 		<!-- <img src="https://logos.textgiraffe.com/logos/logo-name/Akhil-designstyle-smoothie-m.png"> -->
-		<img src="https://via.placeholder.com/150">
-		<h1>Akhil Soni</h1>
-		<h3>Web Developer At CareerFoundry</h3>
-		<p class="quote">{{ Pause and ponder }}</p>
-	</div>
-	<div>
-		<div>
-			<h3>I am</h3>
-			<ul>
-				<li>An engineer</li>
-				<li>A reader</li>
-				<li>A hobby cook</li>
-			</ul>
+			<img src="https://via.placeholder.com/150">
+			<h1>Akhil Soni</h1>
+			<h3>Web Developer At CareerFoundry</h3>
+			<p class="quote">{{ Pause and ponder }}</p>
+		</div>
+		<div class="about-grid">
+			<div class="i-am">
+				<h3>I am</h3>
+				<ul class="about-list">
+					<li>An engineer</li>
+					<li>A reader</li>
+					<li>A hobby cook</li>
+				</ul>
+			</div>
+			<div class="i-like">
+				<h3>I like to</h3>
+				<ul class="about-list">
+					<li>Meet new people</li>
+					<li>Play guitar</li>
+					<li>Eat Icecream</li>
+				</ul>
+			</div>
 		</div>
 		<div>
-			<h3>I like to</h3>
-			<ul>
-				<li>Meet new people</li>
-				<li>Play guitar</li>
-				<li>Eat Icecream</li>
-			</ul>
+			<h3 class="projects-heading">My Projects</h3>
+			<div class="projects-grid">
+				<img class="project-image" src="https://via.placeholder.com/300"/>
+				<img class="project-image" src="https://via.placeholder.com/300">
+				<img class="project-image" src="https://via.placeholder.com/300">
+				<img class="project-image" src="https://via.placeholder.com/300">
+			</div>
 		</div>
-	</div>
-	<div>
-		<h3>My Projects</h3>
-		<img src="https://via.placeholder.com/300"/>
-		<img src="https://via.placeholder.com/300">
-		<img src="https://via.placeholder.com/300">
-		<img src="https://via.placeholder.com/300">
-	</div>
-	<div>
-		<h3>Links</h3>
-		<ul>
-			<li>
-				<a href="https://github.com/akhil-maker">Github</a>
-			</li>
-			<li>
-				<a href="https://linkedin.com/in/akhilsoni">LinkedIn</a>
-			</li>
-		</ul>
-	</div>
-	<div>
-		<form action="#">
-			<label for="email">Email:<input type="email" id="email" placeholder="Enter your email"></label>
-			<label for="message">Message: <textarea id="message">Your Message</textarea></label>
-			<input type="submit" valid="Send Message"/>
-		</form>
-	</div>
+		<div class="links-and-contact">
+			<div class="links">
+				<h3 >Links</h3>
+				<ul class="links-list">
+					<li>
+						<a href="https://github.com/akhil-maker">Github</a>
+					</li>
+					<li>
+						<a href="https://linkedin.com/in/akhilsoni">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+			<form class="contact-list" action="#">
+				<label for="email">Email:<input type="email" id="email" placeholder="Enter your email"></label>
+				<label for="message">Message: <textarea id="message">Your Message</textarea></label>
+				<input type="submit" valid="	Send Message"/>
+			</form>
+		</div>
+</div>
 </body>
 </html>
