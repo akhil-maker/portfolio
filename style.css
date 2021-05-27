@@ -28,7 +28,7 @@
 	}
 }
 
-.project-heading{
+.projects-heading{
 	text-align: center;
 }
 
@@ -38,8 +38,17 @@
 }
 
 .project-image{
-	justify-content: center;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+	height: 300px;
+	width: 300px;
+}
+
+.project-image-wrapper{
 	padding: 4%;
+	justify-self: center;
+	position: relative;
 }
 
 @media (max-width: 650px){
@@ -73,4 +82,16 @@
 	.links-and-contact{
 		grid-template-columns: 100%;
 	}
+}
+
+.profile-picture{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
+	transition: all ease-in-out .2s;
+}
+
+.profile-pictur:hover{
+	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
 }
