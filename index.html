@@ -11,7 +11,7 @@
 		<div class="intro">
 			<img class="profile-picture" src="https://logos.textgiraffe.com/logos/logo-name/Akhil-designstyle-smoothie-m.png">
 			<h1>Akhil Soni</h1>
-			<h3>Web Developer At CareerFoundry</h3>
+			<h3>Web Developer At MyWorld</h3>
 			<p class="quote">{{ Pause and ponder }}</p>
 		</div>
 		<hr/>
@@ -70,13 +70,16 @@
 			<form class="contact-list" action="#">
 				<h3>Email</h3>
 				<input class="cont" type="email" id="email" placeholder="Enter your email">
+				<label class="error">Enter correct email-address</label>
 				<h3>Message</h3>
-				<textarea class="cont" id="message">Your Message</textarea>
+				<textarea class="cont" id="message" placeholder="Your message"></textarea>
 				<div class="submit-button-wrapper">
-					<input class="submit" type="submit" valid="Send Message"/>
+					<input class="submit" type="submit" id="submit-button" valid="Send Message"/>
 				</div>
 			</form>
 		</div>
 	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>

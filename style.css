@@ -164,3 +164,7 @@ form input[type="submit"]{
 .submit-button-wrapper{
 	margin: 20px 0;
 }
+
+.error{
+	visibility: hidden;
+}
