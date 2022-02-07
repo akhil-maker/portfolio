@@ -53,6 +53,9 @@ hr{
 	transition: all ease-in-out .2s;
 	height: 300px;
 	width: 300px;
+	animation-name: spin;
+	animation-duration: 400ms;
+	animation-timing-function: linear;
 }
 
 .project-image:hover{
@@ -123,10 +126,21 @@ hr{
 	width: 150px;
 	height: 150px;
 	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, .16);
-	transition: all ease-in-out .2s;
+	transition: all ease-in-out .2s, transform .4s;
+	animation-name: spin;
+	animation-duration: 400ms;
+	animation-timing-function: linear;
 }
 
-.profile-pictur:hover{
+@keyframes spin{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.profile-picture:hover{
 	box-shadow: 0 8px 12px 0 rgba(34, 60, 80, .16);
 }
 
